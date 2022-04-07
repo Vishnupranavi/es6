@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+        <script>
+            function x(name,callback){
+                console.log("hi "+name);
+                callback();
+            }
+            function callback(){
+                console.log("this is callback");
+            }
+            console.log(x("priya",callback));
+
+            // settimeout()
+            function y(name){
+                console.log("hi "+name);
+                callback();
+            }
+            function callback(){
+                console.log("callme");
+            }
+            //console.log(setTimeout(y("asa"),3000));
+            console.log(setInterval(y("ass"),3000));
+            callback();
+
+        </script>
+    </body>
+</html>

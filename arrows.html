@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>title</title>
+    </head>
+    <body>
+        this is body
+    </body>
+    <script>
+        let fun=(a,b)=>
+        {
+            return a*b;
+        }
+        d=fun(10,20);
+        console.log(d);
+
+        // 
+        let age=prompt("enter age");
+        let x=(age<18)?
+            () => console.log("false"):
+            () => console.log("true");
+            x();
+        // 
+        const contains=[
+            "black",
+            "blue",
+            "green"
+        ]
+        console.log(contains.map(contains=>contains.length));
+        // 
+        let p=(a,b)=>a+b+20;
+        c=p(10,20);
+        console.log(c);
+        // 
+    </script>
+</html>

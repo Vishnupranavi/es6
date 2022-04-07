@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <body>
+            <script>
+                const set1=new Set([1,"eru",{count:false}]);
+                console.log(set1);
+                const set2=new Set([1,1,2,3,3]);
+                console.log(set2);
+            document.write(set2);
+            // set iterator
+            const set3=new Set([1,2,3]);
+            console.log(set3.values(1));
+            // checks in set
+            const set4=new Set([1,2,3]);
+            console.log(set4.has(1));
+            // adding values
+            const set5=new Set([1,2,3]);
+            console.log(set5);
+            // adding
+            set5.add(4);
+            console.log(set5);
+            set5.delete(2);
+            console.log(set5);
+            // clear removes all data from the set
+            set5.clear();
+            console.log(set5);
+            // for iterating
+            const set6=new Set([1,2,3,4]);
+            for(const i of set6){
+                console.log(i);
+            }
+            // weak set
+            let weakset=new WeakSet();
+            let obj={
+                name:"suresh",
+                roll:"1234"
+            }
+            weakset.add(obj);
+            console.log(weakset);
+            
+
+            </script>
+        </body>
+    </head>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <body>
+     <script>
+        //  spread operator
+         const arr=["this","is","pranavi"];
+         console.log(arr);
+         console.log(...arr);
+        //  copy arr and arr1
+         const arr1=[...arr,"she","is","excellent"];
+         console.log(...arr1);
+        //  used for object
+        const obj1={a:1,b:2};
+        const obj2={c:3};
+        const obj3={...obj1,...obj2};
+        console.log(obj3);
+        // rest operator
+        let fun=function(...ard){
+            console.log(...ard);
+        }
+        let x=fun(4);
+        console.log(x);
+        // passing multiple values
+        let func=function(a,r,g){
+            console.log(a+r+g);
+        }
+        let y=func(1,2,3,4);
+        console.log(y);
+     </script>   
+    </body>
+</html>

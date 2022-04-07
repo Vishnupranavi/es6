@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <script>
+        const x=false;
+// promise
+      let countval=new Promise(function(resolve,reject){
+       if(x){
+        resolve("true value");
+       }else{
+        reject("false value");
+      }
+      });
+     console.log(countval);
+     countval
+     .then(function sucessvale(result){
+         console.log(result);
+     })
+     .then(function successrate(){
+         console.log("hai");
+     })
+     .catch(function fails(reject){
+         console.log(reject);
+         
+     })
+     .catch(function fails(){
+         console.log("rejected");
+     })
+    </script>
+</body>
+
+
+
+
+</html>

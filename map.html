@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+        <body>
+            <script>
+                let map1=new Map();
+                console.log(map1);
+                let obj={};
+                // set method to create map
+                map1.set(obj,{name:"priya",roll:"123"});
+                // another way
+                map1.set('object',{age:"20",emp:"22"});
+                // get() is used for access
+                console.log(map1.get('obj'));
+                console.log(map1.get('object'));
+                // has() to check
+                console.log(map1.has('object'));
+                // deleting
+                map1.delete('info');
+                console.log(map1);
+                // weakmap
+                const weakMap = new WeakMap();
+                console.log(weakMap); 
+                let obje = {};
+                weakMap.set(obje, 'add');
+                console.log(weakMap); 
+
+                </script>
+                </body>
+</html>
