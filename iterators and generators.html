@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <script>
+            // iterator
+            let m=[10,20,30];
+            let itr=m[Symbol.iterator]();
+            console.log(itr.next());
+            console.log(itr.next());
+            console.log(itr.next());
+            console.log(itr.next());
+            // generator
+            function*great(){
+                console.log("step1");
+                yield 10;
+                console.log("step2");
+                yield 20;
+                console.log("step3");
+                yield 30;
+            }
+            // first it will return object
+            let mark=great();
+            console.log(mark.next());
+            console.log(mark.next());
+            console.log(mark.next());
+            console.log(mark.next());
+            // IIFE
+            // using arrow functions
+            let sum=((a,b)=>{
+                return a*b;
+            })(10,20);
+            console.log(sum);
+            // withou arrow fun
+            let su=(function(x,t){
+                return x+t;
+            })(10,20);
+            console.log(su);
+            
+
+        </script>
+    </body>
+</html>
